@@ -40,8 +40,8 @@
     <section>
         <form class="rechercher">
             <i class="fas fa-map-marker-alt"></i>
-            <input type="search" class="recherche" placeholder='Marseille, France' aria-label="Champ_Recherche">
-            <button type="button" class="btn_recherche" aria-label="button de recherche">
+            <input type="search" class="recherche" placeholder='Marseille, France'>
+            <button type="button" class="btn_recherche">
                 <span class="SpanRecherche">Recherche</span>
                 <span class="icone_recherche"><i class="fas fa-search"></i></span>
             </button>
@@ -221,65 +221,73 @@
                     </ul>
                 </div>
             </div>
-            <a href="#Afficher" class="texte">Afficher plus</a>
+            <a href="#" class="texte">Afficher plus</a>
         </div>
+
     </section>
 
     <!--activites-->
 
     <section>
-        <div class="conteneur_activites">
+        <div id="conteneur_activites">
             <h2>Activités à Marseille</h2>
-            <div class="grande_image">
-                <figure>
-                    <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="reno-laithienne">
-                    <figcaption>
-                        <h4>Vieux Port</h4>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="Photo">
-                <div class="petite_image">
+            <div class="activites">
+                <div class="grande_image">
                     <figure>
-                        <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="paul-hermann">
+                        <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                            alt="reno-laithienne">
                         <figcaption>
-                            <h4>Fort de Pomégues</h4>
+                            <h4>Vieux Port</h4>
                         </figcaption>
                     </figure>
                 </div>
-                <div class="petite_image">
+                <div class="Photo">
+                    <div class="petite_image">
+                        <figure>
+                            <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                                alt="paul-hermann">
+                            <figcaption>
+                                <h4>Fort de Pomégues</h4>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="petite_image">
+                        <figure>
+                            <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                                alt="kevin-hikari">
+                            <figcaption>
+                                <h4>iles du Friout</h4>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="grande_image">
                     <figure>
-                        <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="kevin-hikari">
+                        <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                            alt="kilyan-sockalingum">
                         <figcaption>
-                            <h4>iles du Friout</h4>
+                            <h4>Parc National des Calanques</h4>
                         </figcaption>
                     </figure>
                 </div>
-            </div>
-            <div class="grande_image">
-                <figure>
-                    <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="kilyan-sockalingum">
-                    <figcaption>
-                        <h4>Parc National des Calanques</h4>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="Photo">
-                <div class="petite_image">
-                    <figure>
-                        <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="florian-wehde">
-                        <figcaption>
-                            <h4>Notre-Dame-de_la-Garde</h4>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="petite_image">
-                    <figure>
-                        <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="lena-paulin">
-                        <figcaption>
-                            <h4>Parc longchamp</h4>
-                        </figcaption>
-                    </figure>
+                <div class="Photo">
+                    <div class="petite_image">
+                        <figure>
+                            <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                                alt="florian-wehde">
+                            <figcaption>
+                                <h4>Notre-Dame-de_la-Garde</h4>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="petite_image">
+                        <figure>
+                            <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="lena-paulin">
+                            <figcaption>
+                                <h4>Parc longchamp</h4>
+                            </figcaption>
+                        </figure>
+                    </div>
                 </div>
             </div>
         </div>
@@ -288,28 +296,28 @@
     <!--footer-->
 
     <footer class="footer">
-            <div class="apropos">
-                <h3>A propos</h3>
-                <ul>
-                    <li>Fonctionnement du site</li>
-                    <li>Conditions générales de vente</li>
-                    <li>Données et qualité</li>
-                </ul>
-            </div>
-            <div class="hebergement">
-                <h3>Nos hébergements</h3>
-                <ul>
-                    <li>Charte qualité</li>
-                    <li>Soumetter votre Hôtel</li>
-                </ul>
-            </div>
-            <div class="contact">
-                <h3>Assistance</h3>
-                <ul>
-                    <li>Centre d'aide</li>
-                    <li>Nous contacter</li>
-                </ul>
-            </div>   
+        <div class="apropos">
+            <h3>A propos</h3>
+            <ul>
+                <li>Fonctionnement du site</li>
+                <li>Conditions générales de vente</li>
+                <li>Données et qualité</li>
+            </ul>
+        </div>
+        <div class="hebergement">
+            <h3>Nos hébergements</h3>
+            <ul>
+                <li>Charte qualité</li>
+                <li>Soumetter votre Hôtel</li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h3>Assistance</h3>
+            <ul>
+                <li>Centre d'aide</li>
+                <li>Nous contacter</li>
+            </ul>
+        </div>
     </footer>
 </body>
 
