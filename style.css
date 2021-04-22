@@ -40,23 +40,37 @@ body {
   width: auto;
   height: auto;
 }
+
 .navigation li {
   list-style-type: none;
   margin-left: 30px;
 }
+
+.navigation li a {
+  color: #202020;
+}
+.navigation li:last-child a {
+  color: #0065FC;
+  font-weight: bold;
+}
+
 .navigation  {
   display: flex;
   flex-direction: row;
   margin-left: 780px;
+}
+
+a:hover {
   
 }
-a:hover {
+.navigation li:nth-child(1) a:hover, .navigation li:nth-child(2) a:hover,
+.navigation li:nth-child(1) a:active, .navigation li:nth-child(2) a:active {
   color: #0066ff;
+  border-top: 3px solid #0065FC;
   transition: all 0.4s;
+  padding-top: 10px;
 }
-a:active {
-  color: #3240ff;
-}
+
 li {
   list-style: none;
 }
@@ -107,8 +121,8 @@ li {
   font-weight: bolder; 
 }
 .btn_recherche:hover {
-  color: var(--blue);
-  border: 1px solid #0066ff;
+  border: 1px solid #044ab3;
+  background-color:#044ab3;
   cursor: pointer;
 }
 .SpanRecherche {
@@ -148,14 +162,17 @@ li {
   padding-top: 20px;
 }
 .filtre i {
-  top: -3px;
   font-size: 16px;
   color: #240bb4;
   background-color: var(--lightBlue);
   border-radius: 30px;
-  width: 50px;
-  height: 30px;
-  padding-top: 15px;
+  width: 20px;
+  padding: 14px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position:relative;
+  left: -2px;
 }
 .filtre span {
   margin-left: 10px;
@@ -193,21 +210,28 @@ li {
 
 /*=== hebergements ===*/
 
+.containeur-herb-pop {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+aside.sidebar + section {
+  background-color: #cccccc;
+  width: 70%;
+  border-radius: 20px;
+  padding: 10px;
+}
+
 #Hebergements {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 70%;
-  height: auto;
-  border-radius: 20px;
   padding-bottom: 10px;
-  background-color: #cccccc;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .titre h2 {
   font-size: 30px;
-  margin-right: 430px;
-  margin-left: 5px;
 }
 .item img {
   width: 250px;
@@ -241,6 +265,7 @@ li {
 .texte {
   font-size: 18px;
   font-weight: bold;
+  color: #202020;
 }
 
 /*===sidebar==*/
