@@ -1,9 +1,171 @@
-@media screen and ( max-width: 768px ) {
-
+@media screen and (max-width: 768px) {
+    h1 {
+      color: #240bb4;
+    }
+    .footer {
+      flex-direction: column;
+    }
+    .filtreFlex {
+      flex-direction: column;
+      display: flex;
+    }
+    #hebergement {
+      flex-shrink: 0;
+      padding-left: 0px;
+    }
+    .item {
+      padding-left: 0;
+    }
+    .item img {
+      position: static;
+      margin-bottom: 1rem;
+      display: block;
+      width: 100%;
+    }
+    .item1 {
+      padding-left: 0;
+    }
+    .item1 img {
+      position: static;
+      margin-bottom: 1rem;
+      display: block;
+      width: 100%;
+    }
+    #hebergement {
+      flex-shrink: 0;
+      padding: 20px;
+    }
+    .sidebar {
+      margin: 0px;
+      float: left;
+      display: flex;
+      flex-direction: column;
+    }
+    footer {
+      flex-direction: row;
+    }
+    .hebergement {
+      margin-left: 150px;
+      margin-right: 100px;
+    }
+    .contact {
+      margin-left: 120px;
+    }
+}
+@media screen and (max-width: 865px) {
   h1 {
-      color: red;
+    color: #240bb4;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .filtreFlex {
+    flex-direction: column;
+    display: flex;
+  }
+  #hebergement {
+    flex-shrink: 0;
+    padding-left: 0px;
+  }
+  .item {
+    padding-left: 0;
+  }
+  .item img {
+    position: static;
+    margin-bottom: 1rem;
+    display: block;
+    width: 100%;
+  }
+  .item1 {
+    padding-left: 0;
+  }
+  .item1 img {
+    position: static;
+    margin-bottom: 1rem;
+    display: block;
+    width: 100%;
+  }
+  #hebergement {
+    flex-shrink: 0;
+    padding: 20px;
+  }
+  .sidebar {
+    margin: 0px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+  }
+  footer {
+    flex-direction: row;
+  }
+  .hebergement {
+    margin-left: 150px;
+    margin-right: 100px;
+  }
+  .contact {
+    margin-left: 120px;
   }
 }
+@media screen and (max-width: 1100px) {
+  body {
+    max-width: 100%;
+  }
+  .sidebar {
+    width: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+    float: left;
+  }
+  #hebergement {
+    flex-shrink: 0;
+  }
+  section {
+    width: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .navigation {
+    width: 100%;
+    float: left;
+    flex-direction: column;
+    display: block;
+  }
+  .conteneur_activites {
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: block;
+  }
+  .conteneur_filtres {
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .filtreFlex {
+    flex-direction: row;
+    overflow: hidden;
+    flex-wrap: wrap;
+    display: block;
+  }
+  .containeur-herb-pop {
+    width: 100%;
+  }
+  footer {
+    flex-direction: row;
+  }
+  .hebergement {
+    margin-left: 150px;
+    margin-right: 100px;
+  }
+  .contact {
+    margin-left: 120px;
+  }
+}
+  
 ::before, ::after {
   margin: 0;
   padding: 0;
@@ -11,9 +173,9 @@
 }
 /*=== root pour les variables ===*/
 :root {
-  --blue: #2660b8e7;
-  --lightBlue: #bed4f3e7;
-  --bgColor: hsla(0, 0%, 95%, 0.835);
+  --blue: ##0065FC;
+  --lightBlue: #DEEBFF;
+  --bgColor:#F2F2F2 ;
 }
 
 /*=== body ===*/
@@ -59,13 +221,9 @@ body {
   flex-direction: row;
   margin-left: 780px;
 }
-
-a:hover {
-  
-}
 .navigation li:nth-child(1) a:hover, .navigation li:nth-child(2) a:hover,
 .navigation li:nth-child(1) a:active, .navigation li:nth-child(2) a:active {
-  color: #0066ff;
+  color: #0065FC;
   border-top: 3px solid #0065FC;
   transition: all 0.4s;
   padding-top: 10px;
@@ -115,7 +273,7 @@ li {
   height: 50px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #0066ff;
+  background-color: #0065FC;
   color: white;
   font-size: 14px; 
   font-weight: bolder; 
@@ -180,7 +338,7 @@ li {
   font-weight: bolder;
 }
 .filtre:hover {
-  background-color: #0066ff;
+  background-color: #c4f3ae;
   transition: all 0.4s;
 }
 
@@ -200,7 +358,7 @@ li {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  color: #0066ff;
+  color: #0065FC;
   border: 1px solid #ccc;
 }
 .fa-info {
@@ -208,7 +366,7 @@ li {
   padding-top: 6px;
 }
 
-/*=== hebergements ===*/
+/*=== section des hebergements ===*/
 
 .containeur-herb-pop {
   display: flex;
@@ -223,9 +381,9 @@ aside.sidebar + section {
   padding: 10px;
 }
 .chart {
-    margin-left: 40px
+  margin-left: 40px;
+  color:#0065FC;
 }
-
 #Hebergements {
   display: flex;
   flex-direction: row;
@@ -271,7 +429,7 @@ li {
   color: #202020;
 }
 
-/*===sidebar==*/
+/*===Aside/sidebar==*/
 
 .sidebar {
   display: flex;
@@ -368,3 +526,5 @@ li {
 .apropos {
   margin-left: 35px;
 }
+
+
