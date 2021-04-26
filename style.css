@@ -106,9 +106,6 @@
     margin-left: 120px;
   }
 }
-/*
- 
-*/
 @media screen and (max-width: 1100px) {
   body {
     max-width: 100%;
@@ -168,11 +165,6 @@
     margin-left: 120px;
   }
 }
-
-@media screen and (max-width: 1300px) {
-
-}
-
 /*
  STYLE PAR DEFAUT POUR DESKTOP
 */
@@ -198,7 +190,7 @@ body,p,a,ul,li {
 }
 body {
   font-size: 16px;
-  padding: 10px 10px;
+  padding: 20px 10px;
   margin: 10px 10px;
 }
 
@@ -210,12 +202,12 @@ body {
 }
 .logo {
   width: auto;
-  height: 45px;
+  height: auto;
 }
 
 .navigation li {
   list-style-type: none;
-  margin-left: 40px;
+  margin-left: 30px;
 }
 
 .navigation li a {
@@ -403,7 +395,6 @@ aside.sidebar + section {
 }
 .titre h2 {
   font-size: 30px;
-  margin-left: 20px;
 }
 .item img {
   width: 250px;
@@ -533,24 +524,19 @@ li {
   margin: 0px;
 }
 .grande_image img {
-  height: 320px;
-  width: 260px;
+  height: 350px;
+  width: 280px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-.petite_image img {
-  width: 240px;
-  height: 120px;
+.petite_image img{
+  width: 280px;
+  height: 140px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-
-#fort {
-  height: 185px;
-}
-
 .mb {
-  margin-bottom: 37px;
+  margin-bottom: 25px;
 }
 
 /*===footer ===*/
@@ -575,3 +561,56 @@ li {
 }
 
 
+@media screen and (min-width: 1100px) and (max-width: 1300px) {
+
+  .grande_image img {
+    /* height: 350px; */
+    width: 100%;
+    height: 83%;
+  }
+  .petite_image img{
+    width: 100%;
+    /* height: 140px; */
+  }
+
+  .Photo {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  #fort {
+    height: 200px;
+  }
+
+  #ile {
+    height: 160px;
+  } 
+
+  #ile img {
+    height: 70%;
+  }
+
+  #fort img {
+    height: 77%;
+  }
+
+  .grande_image {
+    width: 30%;
+  }
+  .grande_image > figure {
+    height: 100%;
+    width: 84%;
+    margin-top: 0px;
+    margin-left: 15px;
+  }
+  .petite_image > figure {
+    width: 100%;
+    margin: unset;
+  }
+  .petite_image {
+    width: 95%;
+  }
+
+}
