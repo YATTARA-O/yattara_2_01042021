@@ -190,7 +190,7 @@ body,p,a,ul,li {
 }
 body {
   font-size: 16px;
-  padding: 20px 10px;
+  padding: 10px 10px;
   margin: 10px 10px;
 }
 
@@ -202,7 +202,7 @@ body {
 }
 .logo {
   width: auto;
-  height: auto;
+  height: 45px;
 }
 
 .navigation li {
@@ -395,6 +395,7 @@ aside.sidebar + section {
 }
 .titre h2 {
   font-size: 30px;
+  margin-left: 20px;
 }
 .item img {
   width: 250px;
@@ -496,7 +497,7 @@ li {
 #conteneur_activites {
   display: flex;
   Flex-direction: column;
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 .conteneur_activites h2 {
@@ -505,6 +506,7 @@ li {
 .activites {
   display: flex;
   justify-content: center;
+  padding-bottom: 40px;
 }
 
 .activites figure > img {
@@ -568,13 +570,13 @@ li {
     width: 100%;
     height: 83%;
   }
-  .petite_image img{
+  .petite_image img {
     width: 100%;
     /* height: 140px; */
   }
 
   .Photo {
-    width: 30%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -597,11 +599,11 @@ li {
   }
 
   .grande_image {
-    width: 30%;
+    width: 50%;
   }
   .grande_image > figure {
     height: 100%;
-    width: 84%;
+    width: 85%;
     margin-top: 0px;
     margin-left: 15px;
   }
