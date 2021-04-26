@@ -198,7 +198,7 @@ body,p,a,ul,li {
 }
 body {
   font-size: 16px;
-  padding: 20px 10px;
+  padding: 10px 10px;
   margin: 10px 10px;
 }
 
@@ -210,12 +210,12 @@ body {
 }
 .logo {
   width: auto;
-  height: auto;
+  height: 45px;
 }
 
 .navigation li {
   list-style-type: none;
-  margin-left: 30px;
+  margin-left: 40px;
 }
 
 .navigation li a {
@@ -403,6 +403,7 @@ aside.sidebar + section {
 }
 .titre h2 {
   font-size: 30px;
+  margin-left: 20px;
 }
 .item img {
   width: 250px;
@@ -532,24 +533,24 @@ li {
   margin: 0px;
 }
 .grande_image img {
-  height: 350px;
-  width: 280px;
+  height: 320px;
+  width: 260px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-.petite_image img{
-  width: 280px;
-  height: 140px;
+.petite_image img {
+  width: 240px;
+  height: 120px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
 
 #fort {
-  height: 200px;
+  height: 185px;
 }
 
 .mb {
-  margin-bottom: 25px;
+  margin-bottom: 37px;
 }
 
 /*===footer ===*/
