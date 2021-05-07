@@ -220,7 +220,7 @@ li {
   justify-content: space-between;
 }
 aside.sidebar + section {
-  background-color: #cccccc;
+  background-color: lightgrey;
   width: 66%;
   border-radius: 20px;
   padding: 10px;
@@ -283,7 +283,7 @@ li {
 
 .sidebar {
   width: 30%;
-  background-color: #cccccc;
+  background-color: lightgrey;
   border-radius: 20px;
   padding-bottom: 6px;
 }
@@ -388,7 +388,7 @@ li {
 .footer {
   display: flex;
   padding-top: 30px;
-  background: #cccccc;
+  background: lightgrey;
   padding-bottom: 20px;
   justify-content: space-around;
 }
@@ -461,6 +461,12 @@ li {
     margin: 0px auto;
     width: 70%;
   }
+  .SpanRecherche {
+    display: none;
+  }
+  .fa-search {
+    display: inline;
+  }
 
   /* Hebergement */
 
@@ -504,6 +510,8 @@ li {
   .grande_image img, .petite_image img {
     height: 220px;
     width: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
   }
   #fort {
     height: 260px;
